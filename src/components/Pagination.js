@@ -24,12 +24,17 @@ const Pagination = ({ rowsPerPage, totalRows, paginate, currentPage }) => {
       <nav className="pagination-nav">
         <ul className="pagination">
           <li>
-            <button onClick={() => paginate(1)} disabled={currentPage === 1}>
+            <button
+              className="first-page"
+              onClick={() => paginate(1)}
+              disabled={currentPage === 1}
+            >
               <FontAwesomeIcon icon={faAnglesLeft} />
             </button>
           </li>
           <li>
             <button
+              className="prev-page"
               onClick={() => paginate(currentPage - 1)}
               disabled={currentPage === 1}
             >
@@ -48,6 +53,7 @@ const Pagination = ({ rowsPerPage, totalRows, paginate, currentPage }) => {
           ))}
           <li>
             <button
+              className="next-page"
               onClick={() => paginate(currentPage + 1)}
               disabled={currentPage === pageNumbers.length}
             >
@@ -56,6 +62,7 @@ const Pagination = ({ rowsPerPage, totalRows, paginate, currentPage }) => {
           </li>
           <li>
             <button
+              className="last-page"
               onClick={() => paginate(pageNumbers.length)}
               disabled={currentPage === pageNumbers.length}
             >
