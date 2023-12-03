@@ -1,0 +1,41 @@
+.pagination-wrapper {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+.pagination-info {
+  margin-right: 10px; /* Adds spacing between the text and pagination buttons */
+  font-size: 0.9rem;
+}
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 5px;
+}
+
+.pagination button {
+  border: none;
+  background-color: #e7e7e7;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.pagination button:disabled {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #77a095;
+  color: white;
+}
+.pagination-nav {
+  display: flex; /* Ensures the navigation is aligned in a row */
+}

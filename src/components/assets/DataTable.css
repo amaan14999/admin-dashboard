@@ -1,0 +1,102 @@
+/* DataTable.css */
+.data-table-container {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px; /* Rounded border for the entire container */
+  background-color: #f9f9f9; /* Light background for the container */
+}
+
+.search-delete-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.trash-icon {
+  color: red;
+}
+.delete-bulk-btn {
+  background-color: #ff7875;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 8px 15px; /* Adjust padding as needed */
+  margin-left: 10px;
+}
+
+.delete-bulk-btn:hover {
+  opacity: 0.8;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 10px; /* Rounded borders for the table */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the table */
+}
+
+.data-table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.data-table thead {
+  background-color: #e7e7e7; /* Distinctive background color for thead */
+}
+
+.data-table td,
+.data-table th {
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 0;
+  padding: 12px; /* Increased padding for readability */
+  text-align: left;
+}
+
+.data-table tbody tr {
+  border-bottom: 1px solid #e0e0e0; /* Light-colored border for each row */
+}
+
+.data-table tbody tr:hover {
+  background-color: #f5f5f5; /* Hover effect for table rows */
+}
+
+.highlighted-row,
+.data-table tbody tr.highlighted-row:hover {
+  background-color: #deece8; /* Color for the highlighted row, no change on hover */
+}
+
+.action-btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+
+.edit-input {
+  border: 1px solid #c9c9c9; /* Blue border for editable fields */
+  padding: 5px; /* Padding for better text visibility */
+  border-radius: 10px; /* Slightly rounded borders for aesthetics */
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover {
+  opacity: 0.8;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
