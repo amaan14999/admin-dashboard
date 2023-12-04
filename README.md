@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# React Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based admin dashboard that includes several key features for managing and interacting with a dataset of users. The dashboard provides functionalities like searching, editing, deleting, pagination, and more.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Column Titles**: Designed to stand out from the entries for clear differentiation.
+2. **Search Functionality**: Includes a search bar that can filter users based on any property (ID, name, email, role). Real-time filtering as you type, and search is triggered on pressing Enter.
+3. **Edit/Delete Rows**: Capability to edit or delete rows in place. These changes are in-memory and not persistent.
+4. **Pagination**: Each page displays 10 rows. Pagination controls include buttons for navigating to the first, previous, next, and last pages. Pagination updates dynamically based on the search/filter results.
+5. **Row Selection**: Ability to select one or more rows for bulk actions. Selected rows are highlighted for visual feedback.
+6. **Bulk Delete**: A 'Delete Selected' button allows for the deletion of multiple selected rows simultaneously.
+7. **Select/Deselect All**: A checkbox in the header row to select or deselect all visible rows on the current page.
+8. **Styling**: Specific class names and styles applied to different elements for a cohesive and user-friendly UI.
+9. **Responsive Design**: Ensures a consistent experience across various devices and screen sizes.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To set up the project locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/amaan14999/admin-dashboard.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+   ```bash
+   cd admin-dashboard
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm i
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Run the application:
 
-### `npm run eject`
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project is deployed using [Cloudflare](https://www.cloudflare.com/). The live version can be found [here](https://admin-dashboard-9jf.pages.dev/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributors
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Amaan](https://github.com/amaan14999)
