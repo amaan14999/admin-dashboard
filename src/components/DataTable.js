@@ -85,17 +85,20 @@ function DataTable() {
 
   const handleSelectAll = () => {
     const currentRows = filteredData.slice(indexOfFirstRow, indexOfLastRow);
+    const isAllSelected = currentRows.every((item) => selectedRows[item.id]);
+    setSelectAll(!isAllSelected);
     const newSelectedRows = { ...selectedRows };
 
-    if (currentRows.every((item) => selectedRows[item.id])) {
-      currentRows.forEach((item) => {
-        newSelectedRows[item.id] = false;
-      });
-    } else {
-      currentRows.forEach((item) => {
-        newSelectedRows[item.id] = true;
-      });
-    }
+    currentRows.every((item) => selectedRows[item.id]);
+    currentRows.forEach((item) => {
+      newSelectedRows[item.id] = !isAllSelected;
+    });
+
+    // else {
+    //   currentRows.forEach((item) => {
+    //     newSelectedRows[item.id] = true;
+    //   });
+    // }
 
     setSelectedRows(newSelectedRows);
   };
@@ -142,7 +145,10 @@ function DataTable() {
               <th>
                 <input
                   type="checkbox"
-                  checked={selectAll}
+                  checked={
+                    selectAll &&
+                    currentRows.every((item) => selectedRows[item.id])
+                  }
                   onChange={handleSelectAll}
                 />
               </th>
