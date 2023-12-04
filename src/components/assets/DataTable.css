@@ -75,7 +75,6 @@
 .data-table tbody tr.highlighted-row:hover {
   background-color: #deece8; /* Color for the highlighted row, no change on hover */
 }
-
 .action-btn {
   padding: 5px 10px;
   margin-right: 5px;

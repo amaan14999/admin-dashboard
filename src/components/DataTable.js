@@ -10,6 +10,7 @@ import {
   faXmark,
   faFloppyDisk,
 } from "@fortawesome/free-solid-svg-icons";
+import Loading from "./Loading";
 
 function DataTable() {
   const [data, setData] = useState([]);
@@ -119,7 +120,7 @@ function DataTable() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (
