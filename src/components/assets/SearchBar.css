@@ -5,3 +5,9 @@
   border-radius: 10px;
   width: 100% !important;
 }
+@media (max-width: 768px) {
+  .search-input {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+}

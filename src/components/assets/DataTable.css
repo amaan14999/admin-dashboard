@@ -67,7 +67,10 @@
 .data-table tbody tr:hover {
   background-color: #f5f5f5; /* Hover effect for table rows */
 }
-
+.data-table th:first-child,
+.data-table td:first-child {
+  width: 3%;
+}
 .highlighted-row,
 .data-table tbody tr.highlighted-row:hover {
   background-color: #deece8; /* Color for the highlighted row, no change on hover */
@@ -99,4 +102,30 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .data-table-container {
+    padding: 10px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px;
+  }
+}
+@media (max-width: 533px) {
+  .data-table-container {
+    padding: 10px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .action-btn {
+    margin-bottom: 5px;
+  }
 }

@@ -39,3 +39,17 @@
 .pagination-nav {
   display: flex; /* Ensures the navigation is aligned in a row */
 }
+@media (max-width: 768px) {
+  .pagination button {
+    padding: 3px 6px;
+    font-size: 0.8rem;
+  }
+
+  .pagination li {
+    margin: 3px;
+  }
+
+  .pagination-info {
+    font-size: 0.8rem;
+  }
+}
